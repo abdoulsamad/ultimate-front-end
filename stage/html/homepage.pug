@@ -2,12 +2,16 @@
 <!DOCTYPE html>
 html(lang="en")
     head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title #{pageTitle}
-      include pug/layout/styles.jade
+        include pug/layout/meta
+        link(rel="stylesheet", href="css/bootstrap.min.css")
+        link(rel="stylesheet", href="css/main.css")
     body
      .page.home-page
-      include pug/layout/sidebar
-      .content-area
-       h1 #{pageTitle}
+       include pug/layout/sidebar
+       .content-area
+         .header
+          i.fa.fa-exchange.fa-lg.toggle-sidebar
+         .content
+           h1 #{pageTitle}
+    include pug/layout/scripts
+    
