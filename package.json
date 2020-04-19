@@ -1,0 +1,33 @@
+{
+  "name": "elzero",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "abdou",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-livereload": "^4.0.2",
+    "gulp-minify": "^3.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "dependencies": {
+    "connect": "^3.7.0",
+    "serve-static": "^1.14.1",
+    "server": "^1.0.27",
+    "static": "^2.0.0",
+    "static-server": "^2.2.1"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 2% "
+  ]
+}
