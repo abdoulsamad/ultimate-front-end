@@ -7,7 +7,7 @@
     <title>homepage</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/main.css"/>
-    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
   </head>
   <body>
     <div class="page home-page">
@@ -24,18 +24,33 @@
                 <li><a href="#">radio</a></li>
               </ul>
             </li>
-            <li><a class="toggle-submenu" href="#">misc</a>
+            <li><a class="toggle-submenu" href="#">
+                 misc<i class="fa fa-angle-right abd"></i></a>
               <ul class="child-links list-unstyled">
                 <li><a href="#">loading</a></li>
-                <li><a href="#">breadcrump</a></li>
+                <li><a href="#">breadCrump</a></li>
               </ul>
             </li>
           </ul>
         </div>
       </div>
       <div class="content-area">
-        <div class="header"><i class="fa fa-exchange fa-lg toggle-sidebar"></i></div>
-        <div class="container-fluid">
+        <div class="header"><i class="fa fa-exchange fa-lg toggle-sidebar"></i>
+          <div class="dropdown notification-container"><i class="fa fa-bell fa-lg toggle-notifications" id="notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+            <div class="dropdown-menu" aria-labelledby="notifications">
+              <div class="noti-head">notification<span>50</span></div>
+              <div class="noti-content">
+                <ul class="list-unstyled">
+                  <li><i class="fa fa-thumbs-o-up fa-lg"></i>you  got email from...</li>
+                  <li><i class="fa fa-money fa-lg"></i>you  got money from...</li>
+                  <li><i class="fa fa-envelope-o fa-lg"></i>you  got money from...</li>
+                </ul>
+              </div>
+              <div class="noti-foot text-center"><a href="#">view all notification</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluids">
           <div class="content">
             <div class="page-head">
               <h1 class="page-title">homepage</h1>

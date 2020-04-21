@@ -20,6 +20,10 @@
     .links-area {
       .abd {
         float: right;
+        position: relative;
+        top: 6px;
+        transition: 0.3s;
+        font-size: 15px;
       }
       li {
         a {
@@ -49,6 +53,7 @@
           border-radius: 50%;
           border: 2px solid #fff;
           transform: translateY(-50%);
+          transition: 0.3s;
         }
         &:hover {
           padding-left: 25px;
@@ -57,8 +62,9 @@
         .fa-angel-right {
           float: right;
           position: relative;
-          top: 6px;
+          top: 19px;
           transition: 0.3s;
+          font-size: 20px;
         }
       }
 
@@ -73,6 +79,7 @@
           width: 3px;
           height: 100%;
           background-color: #666;
+          transition: 0.3s;
         }
         a {
           position: relative;
@@ -84,6 +91,7 @@
             width: 3px;
             height: 100%;
             background-color: #fff;
+            transition: 0.3s;
           }
         }
       }

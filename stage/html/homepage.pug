@@ -5,14 +5,37 @@ html(lang="en")
         include pug/layout/meta
         link(rel="stylesheet", href="css/bootstrap.min.css")
         link(rel="stylesheet", href="css/main.css")
-        link(rel="stylesheet", href="css/font-awesome.min.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+
     body
      .page.home-page
        include pug/layout/sidebar
        .content-area
          .header
            i.fa.fa-exchange.fa-lg.toggle-sidebar
-         .container-fluid
+           .dropdown.notification-container
+            i.fa.fa-bell.fa-lg.toggle-notifications#notifications(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+             
+            .dropdown-menu(aria-labelledby='notifications')
+              .noti-head
+               | notification
+               span 50
+
+              .noti-content
+               ul.list-unstyled
+                 li
+                  i.fa.fa-thumbs-o-up.fa-lg
+                  | you  got email from...
+                 li
+                  i.fa.fa-money.fa-lg
+                  | you  got money from...
+                 li
+                  i.fa.fa-envelope-o.fa-lg
+                  | you  got money from...
+                
+              .noti-foot.text-center: a(href="#") view all notification
+              
+         .container-fluids
            .content
             include pug/components/page-head
              
