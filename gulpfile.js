@@ -14,6 +14,11 @@ gulp.task("html", function () {
     .pipe(gulp.dest("dist"))
     .pipe(livereload());
 });
+gulp.task("icons", function () {
+  return gulp
+    .src("node_modules/@fortawesome/fontawesome-free/webfonts/*")
+    .pipe(gulp.dest(dist + "/assets/webfonts/"));
+});
 
 gulp.task("css", function () {
   return gulp

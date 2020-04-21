@@ -1,28 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0,shrink-to-fit=no"
-    />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edg"/>
     <title>homepage</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" , href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
   </head>
   <body>
     <div class="page home-page">
-      <div class="sidebar">sidebar</div>
-      <div class="content-area">
-        <div class="header">
-          <i class="fa fa-exchange fa-lg toggle-sidebar"></i>
+      <div class="sidebar"> 
+        <div class="logo-area text-center">elzero
+          <ul class="links-area list-unstyled text-left">
+            <li><a href="#">homepage</a></li>
+            <li><a class="toggle-submenu" href="#">
+                 forms<i class="fa fa-angle-right abd"></i></a>
+              <ul class="child-links list-unstyled">
+                <li><a href="#">input</a></li>
+                <li><a href="#">text-area</a></li>
+                <li><a href="#">chekbox</a></li>
+                <li><a href="#">radio</a></li>
+              </ul>
+            </li>
+            <li><a class="toggle-submenu" href="#">misc</a>
+              <ul class="child-links list-unstyled">
+                <li><a href="#">loading</a></li>
+                <li><a href="#">breadcrump</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-        <div class="content">
-          <h1>homepage</h1>
+      </div>
+      <div class="content-area">
+        <div class="header"><i class="fa fa-exchange fa-lg toggle-sidebar"></i></div>
+        <div class="container-fluid">
+          <div class="content">
+            <div class="page-head">
+              <h1 class="page-title">homepage</h1>
+              <p class="page-description lead">this is description of homepage</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </body>
   <script src="js/jquery-3.5.0.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/main-min.js"></script>
 </html>

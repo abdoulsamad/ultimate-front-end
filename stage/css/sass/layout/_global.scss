@@ -1,12 +1,14 @@
 * {
   box-sizing: border-box;
 }
+
 body {
+  font-family: "Open Sans", sans-serif;
 }
 .page {
   min-height: 100vh;
   .content-area {
-    width: 859px;
+    width: calc(100% - 230px);
     min-height: 100vh;
     transition: 0.3s;
     will-change: width;

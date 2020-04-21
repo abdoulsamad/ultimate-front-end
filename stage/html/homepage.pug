@@ -5,13 +5,16 @@ html(lang="en")
         include pug/layout/meta
         link(rel="stylesheet", href="css/bootstrap.min.css")
         link(rel="stylesheet", href="css/main.css")
+        link(rel="stylesheet", href="css/font-awesome.min.css")
     body
      .page.home-page
        include pug/layout/sidebar
        .content-area
          .header
-          i.fa.fa-exchange.fa-lg.toggle-sidebar
-         .content
-           h1 #{pageTitle}
+           i.fa.fa-exchange.fa-lg.toggle-sidebar
+         .container-fluid
+           .content
+            include pug/components/page-head
+             
     include pug/layout/scripts
     
